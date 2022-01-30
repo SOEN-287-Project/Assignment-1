@@ -1,0 +1,40 @@
+<!--Website NavBar -->
+<nav class="navbar nopadding-margin navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <!--Grocery Store name -->
+        <a class="navbar-brand" href="#">Trader Jack's</a>
+
+        <!--Shopping Cart Icon with number of items displayed (set elementById #nb_items_cart) -->
+        <span>
+            <button type="button" class="btn btn-primary cart_btn">
+                <i class="fa" style="font-size:24px; color:rgb(167, 48, 48);">&#xf07a;</i>
+                <span class="badge badge-light" id="nb_items_cart">9</span>
+            </button>
+        </span>
+
+        
+        <!--Toggler button for smaller devices -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--List of items in NavBar -->
+        <div class="collapse navbar-collapse" id="navbarLinks">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+
+        </div>
+    </div>
+
+
+</nav>
