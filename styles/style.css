@@ -14,30 +14,3 @@
 
 
 
- .top-0{
-    position: absolute;
-    top: 0;
- }
-
-
- .a-logo{
-    margin-left:10px;
-    line-height:0;
-
- }
-
- .logo-img{
-    vertical-align:top;
-
- }
-
-
- .nav-background--color{
-     background-color: #F2F5BF;
- }
-
- .fit-content{
-    max-height:fit-content;
-    max-width: fit-content;
- }
-
