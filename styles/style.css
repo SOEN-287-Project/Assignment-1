@@ -1,3 +1,10 @@
+body{
+    background-color: #262833;
+    color:white;
+}
+
+ /* Navbar */
+
 .nopadding-margin {
     padding: 0 !important;
     margin: 0 !important;
@@ -12,5 +19,133 @@
 
  }
 
+  /* Backend.html */
+
+  .button_display{
+      padding:3px 10px;
+  }
+
+  .button_display:hover{
+    color:white;
+  }
+
+ .title{
+     margin-top: 20px;
+     font-size: 25px;
+     font-weight: bold;
+     text-decoration: underline;
+
+ }
+
+ .select_styles{
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: transparent;
+    color:rgba(255, 255, 255, 0.842);
+    cursor:pointer;
+    border-radius: 5px;
+    
+ }
+
+ .option_color{
+    background-color: #262833;
+
+ }
+
+ .table_display{
+     
+     background-color: #7e90e0;
+     border-radius: 5px;
+     margin-top: 12px;
+     font-size: 20px;
+     font-weight: bold;
+     color: darkblue;
+     cursor: pointer;
+
+     
+
+
+ }
+
+ .color_white{
+     color: white;
+     background-color: white;
+ }
+
+ .position_right{
+    float:right;
+
+ }
+
+ .test{
+    margin-left: 20px;
+    margin-right: 20px;
+
+ }
+
+ .product_div{
+    background-color:#23708A;
+     border-radius: 5px;
+     margin-top: 5px;
+     font-size: 17px;
+ }
+
+
+ .product_text{
+     margin-left: 10px;
+     font-weight:700;
+     color:black;
+ }
+
+ .close_btn{
+     color:darkred;
+     cursor: pointer;
+     float:right;
+     margin-right: 5px;
+
+ }
+ .close_btn:hover{
+     color:darkorange;
+ }
+
+ .edit_btn{
+    cursor: pointer;
+    float:right;
+    margin-right: 10px;
+
+ }
+
+ .edit_btn:hover{
+     color:darkorange;
+ }
+
+ .add_aisle_btn{
+     margin:30px auto;
+     border-color: darkblue;
+     background-color: rgba(255, 255, 255, 0.199);
+     color:black;
+     font-weight: bold;
+     font-size: 12px;
+ }
+ .add_aisle_btn:hover{
+     background-color: darkblue;
+     color:black;
+
+ }
+
+ .add_product_btn{
+     background-color: transparent;
+     border-color: transparent;
+     color:white;
+     padding: 0px;
+    }
+
+.add_product_btn:hover{
+    color:black;
+}
+
+
+
+ /*  */
 
 

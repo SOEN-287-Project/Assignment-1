@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Js and Stylesheet for fa icons (ie shopping cart)-->
+    <script src="https://kit.fontawesome.com/b569b39868.js" crossorigin="anonymous"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+    
+    <!--Stylesheet and Js for bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--JQuery Js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!--Custom Stylesheets-->
+    <link rel="stylesheet" href="styles\style.css">
+
+    <!--Custom Stylesheets-->
+    <script src="Javascript\backend.js"></script>
+
+    <!--Grocery Store name -->
+    <title>Trader Jack's</title>
+    
+</head>
+
+<!--Script to place navbar.html in #navbar div (to be included for every page)-->
+<script> 
+$(function(){
+  $("#navbar").load("Components/navbar.html"); 
+});
+
+
+//Once page is loaded, check value of #selectBackend and serve html
+window.addEventListener('load', (event) => {
+    check_display_backend();
+});
+
+
+</script> 
+
+<!--Website Body-->
+<body>
+  <!--Website Navbar-->
+  <div id="navbar"></div>
+
+  <!--Select and display selected backend option-->
+  <div class="container text-center title">
+    <select class= "select_styles" name="Products/Orders" id="selectBackend" onchange="check_display_backend()">
+        <option class= "option_color" value="products">Products</option>
+        <option class= "option_color" value="orders">Orders</option>
+      </select>
+  </div>
+
+  <!--check_display_backend() function loads html in this #backend_display div -->
+  <div id="backend_display">
+
+  </div>
+
+
+
+</body>
+</html>
