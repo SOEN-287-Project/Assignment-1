@@ -3,7 +3,7 @@
 
     <div class="container table_display center_horiz" onclick="document.getElementById('btn_fv').click();">
 
-    <button id = "btn_fv" class="btn position_right button_display" type="button" data-bs-toggle="collapse" data-bs-target="#collapseableFV" aria-expanded="false" aria-controls="collapseableFV">
+    <button id = "btn_fv" class="btn position_right button_display" type="button" data-parent="#Products_1" data-toggle="collapse" data-target=".collapseableFV" aria-expanded="false" aria-controls="collapseableFV">
         <i class="fas fa-chevron-circle-down"></i>
     </button>
     <div class="center_vertical">
@@ -23,9 +23,9 @@
 </div>
 
 <!-- Fruits and Vegetables Products with delete and collapseable edit button-->
-<div class="container">
+<div class="container" id="Products_1">
 
-<div class="margin-20 product_div collapse" id="collapseableFV">
+<div class="margin-20 product_div collapse collapse collapseableFV">
 
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
@@ -38,7 +38,7 @@
 
 
 </div>
-<div class="margin-20 product_div collapse" id="collapseableFV">
+<div class="margin-20 product_div collapse collapseableFV">
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
     </span>
@@ -51,7 +51,7 @@
 
 </div>
 
-<div class="margin-20 product_div collapse" id="collapseableFV">
+<div class="margin-20 product_div collapse collapseableFV">
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
     </span>
@@ -65,7 +65,7 @@
     
 </div>
 
-<div class="margin-20 product_div collapse" id="collapseableFV">
+<div class="margin-20 product_div collapse collapseableFV">
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
     </span>
@@ -78,7 +78,7 @@
     
 </div>
 
-<div class="container collapse text-center" id="collapseableFV">
+<div class="container collapse text-center collapseableFV">
     <button class="add_product_btn">
         <i class="fas fa-plus-circle"></i>
 
@@ -96,7 +96,7 @@
     <div class="container table_display center_horiz" onclick="document.getElementById('btn_dairy').click();">
         
         
-        <button id="btn_dairy" class="btn position_right button_display" type="button" data-bs-toggle="collapse" data-bs-target="#collapseableDairy" aria-expanded="false" aria-controls="collapseableDairy">
+        <button id = "btn_dairy" class="btn position_right button_display" type="button" data-parent="#Products_2" data-toggle="collapse" data-target=".collapseableDairy" aria-expanded="false" aria-controls="collapseableDairy">
             <i class="fas fa-chevron-circle-down"></i>
         </button>
 
@@ -112,9 +112,9 @@
 </div> 
 
 <!-- Dairy Products with delete and collapseable edit button-->
-<div class="container">
+<div class="container" id="Products_2">
 
-<div class="margin-20 product_div collapse" id="collapseableDairy">
+<div class="margin-20 product_div collapse collapseableDairy">
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
     </span>
@@ -127,7 +127,7 @@
     
     
 </div>
-<div class="margin-20 product_div collapse" id="collapseableDairy">
+<div class="margin-20 product_div collapse collapseableDairy">
 
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
@@ -141,7 +141,7 @@
 
 </div>
 
-<div class="margin-20 product_div collapse" id="collapseableDairy">
+<div class="margin-20 product_div collapse collapseableDairy">
 
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
@@ -154,7 +154,7 @@
     
 </div>
 
-<div class="container collapse text-center" id="collapseableDairy">
+<div class="container collapse text-center collapseableDairy">
     <button class="add_product_btn">
         <i class="fas fa-plus-circle"></i>
 
@@ -173,7 +173,7 @@
     <div class="container table_display center_horiz" onclick="document.getElementById('btn_snacks').click();">
 
 
-        <button id="btn_snacks" class="btn position_right button_display" type="button" data-bs-toggle="collapse" data-bs-target="#collapseableSnack" aria-expanded="false" aria-controls="collapseableSnack">
+        <button id = "btn_snacks" class="btn position_right button_display" type="button" data-parent="#Products_3" data-toggle="collapse" data-target=".collapseableSnack" aria-expanded="false" aria-controls="collapseableSnack">
             <i class="fas fa-chevron-circle-down"></i>
         </button>
 
@@ -194,7 +194,7 @@
 <!-- Snack Products with delete and collapseable edit button-->
 <div class="container">
 
-<div class="margin-20 product_div collapse" id="collapseableSnack">
+<div class="margin-20 product_div collapse collapseableSnack">
 
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
@@ -207,7 +207,7 @@
 
     
 </div>
-<div class="margin-20 product_div collapse" id="collapseableSnack">
+<div class="margin-20 product_div collapse collapseableSnack">
 
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
@@ -221,7 +221,7 @@
     
 </div>
 
-<div class="margin-20 product_div collapse" id="collapseableSnack">
+<div class="margin-20 product_div collapse collapseableSnack">
     
     <span class="close_btn">
         <i class="far fa-times-circle"></i>
@@ -234,7 +234,7 @@
     
 </div>
 
-<div class="container collapse text-center" id="collapseableSnack">
+<div class="container collapse text-center collapseableSnack">
     <button class="add_product_btn">
         <i class="fas fa-plus-circle"></i>
 

@@ -14,6 +14,18 @@ body{
 
  /* Navbar */
 
+ .badge_background{
+     background-color: rgb(255, 217, 0);
+ }
+
+ .dropdown-item:hover{
+     background-color: rgb(185, 175, 173);
+ }
+
+ .transparent_background{
+     background: transparent;
+ }
+
 .nav_extra {
     padding: 0 !important;
     margin: 0 !important;
@@ -28,13 +40,35 @@ body{
      top:0px;
 
  }
+ .cart_icon{
+    font-size:24px; 
+    font-weight: bold;
+    color:rgb(167, 48, 48);
+ }
+
+ .cart_btn:hover{
+    background:black;
+ }
+
+ .cart_btn:hover .cart_icon{
+     color:white;
+ }
+
+ .cart_btn:hover .badge_background{
+    background-color: white;
+}
 
  .brand{
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
 
   /* Backend */
-
+ .button_display{
+     background: transparent;
+ }
+ .button_display_2{
+    background: transparent;
+}
 
   .button_display_2{
     color:black;
@@ -213,6 +247,7 @@ body{
      border-color: transparent;
      color:white;
      padding: 0px;
+     cursor: pointer;
      
     }
 
