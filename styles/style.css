@@ -1,13 +1,17 @@
 body{
-    background-color: #262833;
+    background-image: url("../images/background/haikei_background.svg");    /* 262833 and 00101C */
     color:white;
 }
 
+
+
  /* Navbar */
 
-.nopadding-margin {
+.nav_extra {
     padding: 0 !important;
     margin: 0 !important;
+    background-image: url("../images/background/haikei_background.svg");    
+    
  }
 
  .cart_btn{
@@ -50,13 +54,14 @@ body{
     text-decoration: underline;
     font-weight: bold;
     background-color: transparent;
-    color:rgba(255, 255, 255, 0.842);
+    color:rgba(255, 255, 255, 0.843);
     cursor:pointer;
     border-radius: 5px;
     
  }
 
  .option_color{
+     
     background-color: #262833;
 
  }
@@ -75,12 +80,12 @@ body{
 
  .table_display{    
      min-height: 40px;
-     background-color: rgba(255, 255, 255, 0.836);
+     background-image: url("../images/background/3.svg");    
      border-radius: 5px;
      margin-top: 8px;
      font-size: 16px;
      font-weight: bold;
-     color: darkblue;
+     color: white;
      cursor: pointer;
 
      
@@ -89,18 +94,31 @@ body{
  }
 
  .order_color{
-    background-color: #FDA4BA;
+    background-image: url("../images/background/2.svg");  
+    color: white;  
+    min-height: 40px;
+    border-radius: 5px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+ }
+
+ .order_color:hover{
+    background-image: url("../images/background/3.svg");  
+    color: greenyellow;
 
  }
 
  .table_display:hover {
-    background-color: black;
-    color:whitesmoke;
+    background-image: url("../images/background/2.svg");  
+    color:yellow;
     
     
  }
 
- .table_display:hover .button_display_2{
+ .order_color:hover .button_display_2{
     color:white;
 }
 
@@ -124,7 +142,7 @@ body{
  }
 
  .product_div{
-    background-color:#23708A;
+    background-image: url("../images/background/haikei_background.svg");    
      border-radius: 5px;
      margin-top: 5px;
      font-size: 17px;
@@ -134,7 +152,7 @@ body{
  .product_text{
      margin-left: 10px;
      font-weight:700;
-     color:black;
+     color:rgba(255, 255, 255, 0.836);
  }
 
  .close_btn{
@@ -170,8 +188,9 @@ body{
      font-size: 12px;
  }
  .add_aisle_btn:hover{
-     background-color: darkblue;
-     color:black;
+    background-image: url("../images/background/haikei_background.svg");    
+    color:white;
+    border-color: tomato;
 
  }
 
