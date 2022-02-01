@@ -19,11 +19,20 @@ body{
 
  }
 
+ .brand{
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+
   /* Backend.html */
 
-  .button_display{
-      padding:3px 10px;
-  }
+
+  .button_display_2{
+    color:black;
+}
+
+.button_display_2:hover{
+    color:white;
+}
 
   .button_display:hover{
     color:white;
@@ -31,7 +40,7 @@ body{
 
  .title{
      margin-top: 20px;
-     font-size: 25px;
+     font-size: 20px;
      font-weight: bold;
      text-decoration: underline;
 
@@ -52,12 +61,24 @@ body{
 
  }
 
- .table_display{
+ .center_vertical{
      
-     background-color: #7e90e0;
+    line-height: 40px;
+
+}
+
+
+ .center_horiz{
+    text-align: center;
+
+ }
+
+ .table_display{    
+     min-height: 40px;
+     background-color: rgba(255, 255, 255, 0.836);
      border-radius: 5px;
-     margin-top: 12px;
-     font-size: 20px;
+     margin-top: 8px;
+     font-size: 16px;
      font-weight: bold;
      color: darkblue;
      cursor: pointer;
@@ -67,8 +88,27 @@ body{
 
  }
 
+ .order_color{
+    background-color: #FDA4BA;
+
+ }
+
+ .table_display:hover {
+    background-color: black;
+    color:whitesmoke;
+    
+    
+ }
+
+ .table_display:hover .button_display_2{
+    color:white;
+}
+
+.table_display:hover .button_display{
+    color:white;
+}
+
  .color_white{
-     color: white;
      background-color: white;
  }
 
@@ -77,7 +117,7 @@ body{
 
  }
 
- .test{
+ .margin-20{
     margin-left: 20px;
     margin-right: 20px;
 
@@ -121,9 +161,11 @@ body{
 
  .add_aisle_btn{
      margin:30px auto;
-     border-color: darkblue;
-     background-color: rgba(255, 255, 255, 0.199);
-     color:black;
+     border-radius: 10px;
+     border-width: 3px;
+     border-color: white;
+     background-color: black;
+     color:rgba(255, 255, 255, 0.836);
      font-weight: bold;
      font-size: 12px;
  }

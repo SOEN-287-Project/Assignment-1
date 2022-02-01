@@ -3,7 +3,7 @@
     <div class="container-fluid">
 
         <!--Grocery Store name -->
-        <a class="navbar-brand" href="index.html">Trader Jack's</a>
+        <a class="navbar-brand brand" href="index.html">Trader Jack's</a>
 
         <!--Shopping Cart Icon with number of items displayed (set elementById #nb_items_cart) -->
         <span>
@@ -26,10 +26,19 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="backend.html">Backend</a>
-            </li>
+              <div class="dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                  Aisles
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                  <li><a class="dropdown-item" href="#">Fruits and Vegetables</a></li>
+                  <li><a class="dropdown-item" href="#">Dairy Products</a></li>
+                  <li><a class="dropdown-item" href="#">Snacks</a></li>
+                </ul>
+              </div>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="backend.html">Backend</a>
             </li>
           </ul>
 
