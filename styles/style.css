@@ -1,6 +1,13 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body{
     background-image: url("../images/background/haikei_background.svg");    /* 262833 and 00101C */
     color:white;
+    background-size:cover;
+
 }
 
 
@@ -10,7 +17,6 @@ body{
 .nav_extra {
     padding: 0 !important;
     margin: 0 !important;
-    background-image: url("../images/background/haikei_background.svg");    
     
  }
 
@@ -27,7 +33,7 @@ body{
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
 
-  /* Backend.html */
+  /* Backend */
 
 
   .button_display_2{
@@ -166,6 +172,10 @@ body{
      color:darkorange;
  }
 
+ .close_btn:active{
+    color:red;
+}
+
  .edit_btn{
     cursor: pointer;
     float:right;
@@ -176,6 +186,10 @@ body{
  .edit_btn:hover{
      color:darkorange;
  }
+
+ .edit_btn:active{
+    color:red;
+}
 
  .add_aisle_btn{
      margin:30px auto;
@@ -199,14 +213,116 @@ body{
      border-color: transparent;
      color:white;
      padding: 0px;
+     
     }
 
 .add_product_btn:hover{
-    color:black;
+    color:greenyellow;
+    
+}
+
+.add_product_btn:active{
+    color:yellow;
+    
 }
 
 
 
- /*  */
+ /* edit_div */
+.edit_div{
+    min-width: 80%;
+    min-height: 90%;
+    background-image: url("../images/background/4.svg");    /* 262833 and 00101C */
+    position:fixed;
+    top:6%;
+    left:5%;
+    right:5%;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    background-size:cover;
+
+}
+
+.div_2_background{
+    background-image: url("../images/background/5.svg");
+    background-size:cover;
+
+}
+
+.edit_close{
+
+    position: absolute;
+    top:10px;
+    right:10px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit_close:hover{
+    color:darkred; 
+}
+
+.edit_close:active{
+    color:tomato;
+}
+
+.edit_title{
+    text-align: center;   
+    text-decoration: underline; 
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.884);
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.input{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+
+}
+
+.input_edit{
+    width: 100%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 0px;
+    caret-color: white;
+    background-color: #fab700;
+    font-weight: bold;
+
+}
+
+.input_label{
+    position: absolute;
+    margin-left: 10px;
+    transform: translate(.25rem, -55%) scale(.8);
+    font-weight: bold;
+
+    background-color: white;
+    color:black;
+    font-size: 12.5px;
+
+}
+
+.margin_top_25{
+    margin-top: 25px;
+
+}
+
+.save_btn{
+    margin-top:10px;
+    font-size: 15px;
+}
+
+
+
+
+
 
 
