@@ -4,15 +4,19 @@ html, body {
 }
 
 body{
-    background-image: url("../images/background/haikei_background.svg");    /* 262833 and 00101C */
-    color:white;
+    /*background-image: url("../images/background/haikei_background.svg");    /* 262833 and 00101C */
+    color: #FFFFFC;
     background-size:cover;
-
 }
 
 
 
  /* Navbar */
+
+ .container-fluid{
+    background-color: black;
+    padding: 10px;
+ }
 
  .navbar-toggler{
      margin-right: 12px;
@@ -24,7 +28,7 @@ body{
  }
 
  .dropdown-item:hover{
-     background-color: rgb(185, 175, 173);
+     background-color: #FF7F11;
  }
 
  .transparent_background{
@@ -37,8 +41,14 @@ body{
     
  }
 
+ .btn-primary{
+     background-color: #FF3F00;
+     border-color: black;
+ }
+
  .cart_btn{
      margin: 3px 0px;
+     margin-top: 11px;
      padding: 2px 12px 4px 7px;
      position: absolute;
      right:75px;
@@ -47,11 +57,12 @@ body{
  }
  .cart_icon{
     font-size:24px; 
-    color:rgb(167, 48, 48);
+    color:#FFFFFC;
  }
 
  .cart_btn:hover{
-    background:black;
+    background:#FF7F11;
+    border-color: black;
  }
 
  .cart_btn:hover .cart_icon{
@@ -94,10 +105,9 @@ body{
  }
 
  .select_styles{
-    text-decoration: underline;
     font-weight: bold;
     background-color: transparent;
-    color:rgba(255, 255, 255, 0.843);
+    color:black;
     cursor:pointer;
     border-radius: 5px;
     
@@ -105,7 +115,7 @@ body{
 
  .option_color{
      
-    background-color: #262833;
+    background-color: #ffffff;
 
  }
 
@@ -123,40 +133,43 @@ body{
 
  .table_display{    
      min-height: 40px;
-     background-image: url("../images/background/3.svg");    
+     /*background-image: url("../images/background/3.svg");  */
+     background-color: #FF7F11;  
      border-radius: 5px;
-     margin-top: 8px;
+     margin-top: 15px;
      font-size: 16px;
      font-weight: bold;
      color: white;
      cursor: pointer;
-
-     
-
+     box-shadow: 0px 0px 3px 1px rgb(209, 94, 0); 
 
  }
 
  .order_color{
-    background-image: url("../images/background/2.svg");  
+    /*background-image: url("../images/background/2.svg");*/
+    background-color: #FF7F11;  
     color: white;  
     min-height: 40px;
     border-radius: 5px;
-    margin-top: 8px;
+    margin-top: 25px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 0px 0px 3px 1px rgb(209, 94, 0);
 
  }
 
  .order_color:hover{
-    background-image: url("../images/background/3.svg");  
-    color: greenyellow;
+    /*background-image: url("../images/background/3.svg");*/
+    background-color: #FF9D47;  
+    color: black
 
  }
 
  .table_display:hover {
-    background-image: url("../images/background/2.svg");  
-    color:yellow;
+    /* background-image: url("../images/background/2.svg");   */
+    background-color: #FF9D47; 
+    color:black
     
     
  }
@@ -185,7 +198,9 @@ body{
  }
 
  .product_div{
-    background-image: url("../images/background/haikei_background.svg");    
+    /*ackground-image: url("../images/background/haikei_background.svg");*/
+    background-color: #535353;    
+    color: white;
      border-radius: 5px;
      margin-top: 5px;
      font-size: 17px;
@@ -195,7 +210,7 @@ body{
  .product_text{
      margin-left: 10px;
      font-weight:700;
-     color:rgba(255, 255, 255, 0.836);
+     color:white;
  }
 
  .close_btn{
@@ -268,11 +283,12 @@ body{
 
  /* edit_div */
 .edit_div{
-    min-width: 80%;
-    min-height: 90%;
-    background-image: url("../images/background/4.svg");    /* 262833 and 00101C */
+    min-width: 50%;
+    min-height: 50%;
+    /* background-image: url("../images/background/4.svg");    262833 and 00101C */
+    background-color: rgb(78, 77, 77);
     position:fixed;
-    top:6%;
+    top:7%;
     left:5%;
     right:5%;
     border-radius: 20px;
@@ -284,7 +300,8 @@ body{
 }
 
 .div_2_background{
-    background-image: url("../images/background/5.svg");
+    /* background-image: url("../images/background/5.svg"); */
+    background-color: rgb(78, 77, 77);
     background-size:cover;
 
 }
@@ -308,12 +325,10 @@ body{
 
 .edit_title{
     text-align: center;   
-    text-decoration: underline; 
     font-weight: bold;
-    color:rgba(255, 255, 255, 0.884);
+    color:white;
     margin-top: 10px;
-    font-size: 30px;
-    font-family: fantasy;
+    font-size:40px;
 }
 
 .input{
@@ -327,12 +342,13 @@ body{
     width: 100%;
     border-radius: 5px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
     border-color: white;
     padding: 0px;
-    caret-color: white;
-    background-color: #fab700;
+    caret-color: rgb(255, 255, 255);
+    background-color: #fdc492;
     font-weight: bold;
+    color: white;
 
 }
 
@@ -341,7 +357,7 @@ body{
     margin-left: 10px;
     transform: translate(.25rem, -55%) scale(.8);
     font-weight: bold;
-
+    border-radius: 5px;
     background-color: white;
     color:black;
     font-size: 12.5px;
