@@ -7,8 +7,10 @@ function check_display_backend(){
     }else if(choice == "orders"){
         $( "#backend_display" ).load( "backend/orders.html" );
 
-    }
+    }else if(choice == "users"){
+        $( "#backend_display" ).load( "backend/page9.html" );
 
+    }
 
 }
 

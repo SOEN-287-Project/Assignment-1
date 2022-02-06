@@ -22,7 +22,7 @@ Website URL: https://soen-287-project.github.io/Assignment-1/
 <br />
 **P8:** Backend.html + backend\products.html + backend\edit_div_products.html (click edit button)
 <br />
-**P9:**
+**P9:** Backend.html + backend\page9.html
 <br />
 **P10:**
 <br />
