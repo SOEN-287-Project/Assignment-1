@@ -1,382 +1,411 @@
-html, body {
-    margin: 0;
-    height: 100%;
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 
-body{
-    /*background-image: url("../images/background/haikei_background.svg");    /* 262833 and 00101C */
-    color: #FFFFFC;
-    background-size:cover;
+body {
+  /*background-image: url("../images/background/haikei_background.svg");    /* 262833 and 00101C */
+  color: #fffffc;
+  background-size: cover;
 }
 
+/* Navbar */
 
+.container-fluid {
+  background-color: black;
+  padding: 10px;
+}
 
- /* Navbar */
+.navbar-toggler {
+  margin-right: 12px;
+}
 
- .container-fluid{
-    background-color: black;
-    padding: 10px;
- }
+.badge_background {
+  background: transparent;
+  color: white;
+}
 
- .navbar-toggler{
-     margin-right: 12px;
- }
+.dropdown-item:hover {
+  background-color: #ff7f11;
+}
 
- .badge_background{
-     background: transparent;
-     color:white;
- }
-
- .dropdown-item:hover{
-     background-color: #FF7F11;
- }
-
- .transparent_background{
-     background: transparent;
- }
+.transparent_background {
+  background: transparent;
+}
 
 .nav_extra {
-    padding: 0 !important;
-    margin: 0 !important;
-    
- }
-
- .btn-primary{
-     background-color: #FF3F00;
-     border-color: black;
- }
-
- .cart_btn{
-     margin: 3px 0px;
-     margin-top: 11px;
-     padding: 2px 12px 4px 7px;
-     position: absolute;
-     right:75px;
-     top:0px;
-
- }
- .cart_icon{
-    font-size:24px; 
-    color:#FFFFFC;
- }
-
- .cart_btn:hover{
-    background:#FF7F11;
-    border-color: black;
- }
-
- .cart_btn:hover .cart_icon{
-     color:white;
- }
-
-
-
- .brand{
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     margin-left: 20px;
- }
-
-  /* Backend */
- .button_display{
-     background: transparent;
- }
- .button_display_2{
-    background: transparent;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-  .button_display_2{
-    color:black;
+.btn-primary {
+  background-color: #ff3f00;
+  border-color: black;
 }
 
-.button_display_2:hover{
-    color:white;
+.cart_btn {
+  margin: 3px 0px;
+  margin-top: 11px;
+  padding: 2px 12px 4px 7px;
+  position: absolute;
+  right: 75px;
+  top: 0px;
+}
+.cart_icon {
+  font-size: 24px;
+  color: #fffffc;
 }
 
-  .button_display:hover{
-    color:white;
-  }
-
- .title{
-     margin-top: 20px;
-     font-size: 20px;
-     font-weight: bold;
-     text-decoration: underline;
-
- }
-
- .select_styles{
-    font-weight: bold;
-    background-color: transparent;
-    color:black;
-    cursor:pointer;
-    border-radius: 5px;
-    
- }
-
- .option_color{
-     
-    background-color: #ffffff;
-
- }
-
- .center_vertical{
-     
-    line-height: 40px;
-
+.cart_btn:hover {
+  background: #ff7f11;
+  border-color: black;
 }
 
-
- .center_horiz{
-    text-align: center;
-
- }
-
- .table_display{    
-     min-height: 40px;
-     /*background-image: url("../images/background/3.svg");  */
-     background-color: #FF7F11;  
-     border-radius: 5px;
-     margin-top: 15px;
-     font-size: 16px;
-     font-weight: bold;
-     color: white;
-     cursor: pointer;
-     box-shadow: 0px 0px 3px 1px rgb(209, 94, 0); 
-
- }
-
- .order_color{
-    /*background-image: url("../images/background/2.svg");*/
-    background-color: #FF7F11;  
-    color: white;  
-    min-height: 40px;
-    border-radius: 5px;
-    margin-top: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0px 0px 3px 1px rgb(209, 94, 0);
-
- }
-
- .order_color:hover{
-    /*background-image: url("../images/background/3.svg");*/
-    background-color: #FF9D47;  
-    color: black
-
- }
-
- .table_display:hover {
-    /* background-image: url("../images/background/2.svg");   */
-    background-color: #FF9D47; 
-    color:black
-    
-    
- }
-
- .order_color:hover .button_display_2{
-    color:white;
+.cart_btn:hover .cart_icon {
+  color: white;
 }
 
-.table_display:hover .button_display{
-    color:white;
+.brand {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 20px;
 }
 
- .color_white{
-     background-color: white;
- }
-
- .position_right{
-    float:right;
-
- }
-
- .margin-20{
-    margin-left: 20px;
-    margin-right: 20px;
-
- }
-
- .product_div{
-    /*ackground-image: url("../images/background/haikei_background.svg");*/
-    background-color: #535353;    
-    color: white;
-     border-radius: 5px;
-     margin-top: 5px;
-     font-size: 17px;
- }
-
-
- .product_text{
-     margin-left: 10px;
-     font-weight:700;
-     color:white;
- }
-
- .close_btn{
-     color:darkred;
-     cursor: pointer;
-     float:right;
-     margin-right: 5px;
-
- }
- .close_btn:hover{
-     color:darkorange;
- }
-
- .close_btn:active{
-    color:red;
+/* Backend */
+.button_display {
+  background: transparent;
+}
+.button_display_2 {
+  background: transparent;
 }
 
- .edit_btn{
-    cursor: pointer;
-    float:right;
-    margin-right: 10px;
-
- }
-
- .edit_btn:hover{
-     color:darkorange;
- }
-
- .edit_btn:active{
-    color:red;
+.button_display_2 {
+  color: black;
 }
 
- .add_aisle_btn{
-     margin:30px auto;
-     border-radius: 10px;
-     border-width: 3px;
-     border-color: white;
-     background-color: black;
-     color:rgba(255, 255, 255, 0.836);
-     font-weight: bold;
-     font-size: 12px;
- }
- .add_aisle_btn:hover{
-    background-image: url("../images/background/haikei_background.svg");    
-    color:white;
-    border-color: tomato;
-
- }
-
- .add_product_btn{
-     background-color: transparent;
-     border-color: transparent;
-     color:white;
-     padding: 0px;
-     cursor: pointer;
-     
-    }
-
-.add_product_btn:hover{
-    color:greenyellow;
-    
+.button_display_2:hover {
+  color: white;
 }
 
-.add_product_btn:active{
-    color:yellow;
-    
+.button_display:hover {
+  color: white;
 }
 
-
-
- /* edit_div */
-.edit_div{
-    min-width: 50%;
-    min-height: 50%;
-    /* background-image: url("../images/background/4.svg");    262833 and 00101C */
-    background-color: rgb(78, 77, 77);
-    position:fixed;
-    top:7%;
-    left:5%;
-    right:5%;
-    border-radius: 20px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: white;
-    background-size:cover;
-
+.title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-.div_2_background{
-    /* background-image: url("../images/background/5.svg"); */
-    background-color: rgb(78, 77, 77);
-    background-size:cover;
-
+.select_styles {
+  font-weight: bold;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.edit_close{
-
-    position: absolute;
-    top:10px;
-    right:10px;
-    color: white;
-    cursor: pointer;
+.option_color {
+  background-color: #ffffff;
 }
 
-.edit_close:hover{
-    color:darkred; 
+.center_vertical {
+  line-height: 40px;
 }
 
-.edit_close:active{
-    color:tomato;
+.center_horiz {
+  text-align: center;
 }
 
-.edit_title{
-    text-align: center;   
-    font-weight: bold;
-    color:white;
-    margin-top: 10px;
-    font-size:40px;
+.table_display {
+  min-height: 40px;
+  /*background-image: url("../images/background/3.svg");  */
+  background-color: #ff7f11;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 1px rgb(209, 94, 0);
 }
 
-.input{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10px;
-
+.order_color {
+  /*background-image: url("../images/background/2.svg");*/
+  background-color: #ff7f11;
+  color: white;
+  min-height: 40px;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 1px rgb(209, 94, 0);
 }
 
-.input_edit{
-    width: 100%;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    padding: 0px;
-    caret-color: rgb(255, 255, 255);
-    background-color: #fdc492;
-    font-weight: bold;
-    color: white;
-
+.order_color:hover {
+  /*background-image: url("../images/background/3.svg");*/
+  background-color: #ff9d47;
+  color: black;
 }
 
-.input_label{
-    position: absolute;
-    margin-left: 10px;
-    transform: translate(.25rem, -55%) scale(.8);
-    font-weight: bold;
-    border-radius: 5px;
-    background-color: white;
-    color:black;
-    font-size: 12.5px;
-
+.table_display:hover {
+  /* background-image: url("../images/background/2.svg");   */
+  background-color: #ff9d47;
+  color: black;
 }
 
-.margin_top_25{
-    margin-top: 25px;
-
+.order_color:hover .button_display_2 {
+  color: white;
 }
 
-.save_btn{
-    margin-top:10px;
-    font-size: 15px;
+.table_display:hover .button_display {
+  color: white;
 }
 
+.color_white {
+  background-color: white;
+}
 
+.position_right {
+  float: right;
+}
 
+.margin-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+.product_div {
+  /*ackground-image: url("../images/background/haikei_background.svg");*/
+  background-color: #535353;
+  color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 17px;
+}
 
+.product_text {
+  margin-left: 10px;
+  font-weight: 700;
+  color: white;
+}
 
+.close_btn {
+  color: darkred;
+  cursor: pointer;
+  float: right;
+  margin-right: 5px;
+}
+.close_btn:hover {
+  color: darkorange;
+}
 
+.close_btn:active {
+  color: red;
+}
+
+.edit_btn {
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+}
+
+.edit_btn:hover {
+  color: darkorange;
+}
+
+.edit_btn:active {
+  color: red;
+}
+
+.add_aisle_btn {
+  margin: 30px auto;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: white;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.836);
+  font-weight: bold;
+  font-size: 12px;
+}
+.add_aisle_btn:hover {
+  background-image: url("../images/background/haikei_background.svg");
+  color: white;
+  border-color: tomato;
+}
+
+.add_product_btn {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.add_product_btn:hover {
+  color: greenyellow;
+}
+
+.add_product_btn:active {
+  color: yellow;
+}
+
+/* edit_div */
+.edit_div {
+  min-width: 50%;
+  min-height: 50%;
+  /* background-image: url("../images/background/4.svg");    262833 and 00101C */
+  background-color: rgb(78, 77, 77);
+  position: fixed;
+  top: 7%;
+  left: 5%;
+  right: 5%;
+  border-radius: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white;
+  background-size: cover;
+}
+
+.div_2_background {
+  /* background-image: url("../images/background/5.svg"); */
+  background-color: rgb(78, 77, 77);
+  background-size: cover;
+}
+
+.edit_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit_close:hover {
+  color: darkred;
+}
+
+.edit_close:active {
+  color: tomato;
+}
+
+.edit_title {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.input {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+.input_edit {
+  width: 100%;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  padding: 0px;
+  caret-color: rgb(255, 255, 255);
+  background-color: #fdc492;
+  font-weight: bold;
+  color: white;
+}
+
+.input_label {
+  position: absolute;
+  margin-left: 10px;
+  transform: translate(0.25rem, -55%) scale(0.8);
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 12.5px;
+}
+
+.margin_top_25 {
+  margin-top: 25px;
+}
+
+.save_btn {
+  margin-top: 10px;
+  font-size: 15px;
+}
+/*Style css for aisles*/
+
+.AisleSpan {
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-right: 1725px;
+  text-align: center;
+  background: #2d2f31;
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
+  display: block;
+  font-size: 24px;
+}
+
+.AisleSpan::after {
+  float: right;
+  right: 10%;
+}
+
+.slide {
+  margin: 0px auto;
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height 0.4s ease;
+}
+
+.slide li {
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+.touch:checked + .slide {
+  height: 290px;
+}
+
+.AisleProducts {
+  border: black 2.5px solid;
+  height: 250px;
+  margin: 10px;
+  color: black;
+}
+th,
+td {
+  border: black 2.5px solid;
+
+}
+tr,
+th {
+  font-size: 30px;
+
+}
+td{
+    height: 200px;
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: #2d2f31  ;
+}
