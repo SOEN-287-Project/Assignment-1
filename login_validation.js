@@ -2,7 +2,7 @@ function validateEmail()
 {
   var text = document.getElementById("email").value;
 
-  var regex = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,6})$/;
+  var regex = /([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,6})$/;
 
   if(regex.test(text))
   {
@@ -23,7 +23,7 @@ function validateEmail()
 function validatePostalCode(){
   var text = document.getElementById("postalCode").value;
 
-  var regex = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
+  var regex = /[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
 
   if(regex.test(text))
   {
@@ -43,7 +43,7 @@ function validateFirstName()
 {
   var text = document.getElementById("firstname").value;
 
-  var regex = /^[A-Za-z]$/;
+  var regex = /[A-Za-z]$/;
   if(regex.test(text))
   {
     document.getElementById("validate4").innerHTML="This first name is valid";
@@ -61,7 +61,7 @@ function validateLastName()
 {
   var text = document.getElementById("lastname").value;
 
-  var regex = /^[A-Za-z]$/;
+  var regex = /[A-Za-z]$/;
   if(regex.test(text))
   {
     document.getElementById("validate5").innerHTML="This last name is valid";
