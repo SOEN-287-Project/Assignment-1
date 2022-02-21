@@ -14,9 +14,9 @@ Website URL: https://soen-287-project.github.io/Assignment-1/
 <br />
 **P4:**
 <br />
-**P5:**
+**P5:** Login Page
 <br />
-**P6:**
+**P6:** SIgn Up Page
 <br />
 **P7:** Backend.html + backend\products.html
 <br />
