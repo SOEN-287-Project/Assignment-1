@@ -11,6 +11,9 @@ function check_display_backend(){
         $( "#backend_display" ).load( "backend/page9.html" );
 
     }
+    else if(choice == "user_edit"){
+        $( "#backend_display" ).load( "backend/page10.html" );
+    }
 
 }
 
@@ -20,6 +23,10 @@ function display_edit_demo(){
 
 function display_edit_demo_orders(){
     $( "#edit_div" ).load( "backend/edit_div_orders.html" );
+}
+
+function display_edit_demo_user(){
+    $( "#edit_div" ).load( "backend/edit_div_users.html" );
 }
 
 function close_display_edit(){
