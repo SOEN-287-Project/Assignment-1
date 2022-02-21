@@ -6,13 +6,13 @@ Website URL: https://soen-287-project.github.io/Assignment-1/
 <br />
 
 ## <u>HTML Files - Assignment 1</u>
-**P1:**
+**P1:** navbar.html
 <br />
-**P2:**
+**P2:** Dairy Products.html + Fruits and Vegetables.html + Snacks.html
 <br />
-**P3:**
+**P3:** Product Description Page (P3).html
 <br />
-**P4:**
+**P4:** Shopping Cart Page (P4).html
 <br />
 **P5:** Login Page
 <br />
