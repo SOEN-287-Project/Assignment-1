@@ -3,6 +3,8 @@ Assignment 1 for SOEN-287
 
 Website URL: https://soen-287-project.github.io/Assignment-1/
 
+gitHub repository URL: https://github.com/SOEN-287-Project/Assignment-1
+
 <br />
 
 ## <u>HTML Files - Assignment 1</u>
