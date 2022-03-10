@@ -36,8 +36,8 @@
 
     <link rel="stylesheet" href="styles/P3_stylesheet.css" />
 
-    <!--Custom Stylesheets-->
-    <script src="Javascript/backend.js"></script>
+    <!--Javascript-->
+    <script src="Javascript/product_description.js"></script>
 
     <!--Grocery Store name -->
     <title>Trader Jack's</title>
@@ -52,13 +52,13 @@
     <div id="navbar"></div>
     <div class="container1">
         <div class="image">
-            <img src="images/400x400.jpg" alt="Grocery Item" />
+            <img id="product_img" src="images/400x400.jpg" alt="Grocery Item" />
         </div>
 
         <div class="text_right_of_img">
-            <h1>Grocery Item</h1>
+            <h1 id="item_name">Grocery Item</h1>
             <button class="collapse">Description</button>
-            <div class="content">
+            <div class="content" id="description">
                 <p>All the descriptive text describing the item goes here!</p>
             </div>
         </div>
@@ -67,9 +67,11 @@
     <div class="container2">
         <div class="Number_To_Add">
             <label for="How many?">How many?</label>
-            <input type="number" id="How many?" />
+            <input type="number" id="quantity_input" onchange="update_input()"/>
         </div>
-        <div class="Shopping_Cart_Button"><button>Add to Cart</button></div>
+        <div class="Shopping_Cart_Button"><button onclick=addToCart()>Add to Cart</button></div>
+        <div class="price_txt">Price: <span id="price_update"></span></div>
+
     </div>
 </body>
 

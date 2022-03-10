@@ -48,6 +48,13 @@ img{
     padding-right: 15px;
 }
 
+.price_txt{
+    color:#32CD32;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
 @media only screen and (max-width: 767px){
 
     /*for tablets*/
