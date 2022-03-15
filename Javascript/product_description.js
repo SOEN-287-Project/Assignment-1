@@ -57,7 +57,14 @@ function update_input(){
         history.replaceState("","",window.location.href+"?quantity="+quantity) //Updates quantity parameter in url
 
     }else{
-        history.replaceState("","",window.location.href.substring(0,window.location.href.indexOf("&quantity"))+"&quantity="+quantity) //Updates quantity parameter in url
+
+        if(window.location.href.indexOf("&quantity")!=-1){
+            history.replaceState("","",window.location.href.substring(0,window.location.href.indexOf("&quantity"))+"&quantity="+quantity) //Updates quantity parameter in url
+
+        }else{
+            history.replaceState("","",window.location.href +"&quantity="+quantity) //Updates quantity parameter in url
+
+        }
 
     }
 
