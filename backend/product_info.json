@@ -36,7 +36,7 @@
             "image": "images/Fruits and veggies/Grapes.png"
         },
         "Lemons":{
-            "Price" : 0.99,
+            "Price" : 0.89,
             "Description": "Organic Lemon, grown from farms of Montreal.",
             "image": "images/Fruits and veggies/Lemons.png"
         },
@@ -46,7 +46,7 @@
             "image": "images/Fruits and veggies/Lettuce.png"
         },
         "Melon":{
-            "Price" : 0.99,
+            "Price" : 0.98,
             "Description": "Organic Melon, grown from farms of Montreal.",
             "image": "images/Fruits and veggies/Melon.png"
         },
@@ -56,7 +56,7 @@
             "image": "images/Fruits and veggies/Mango.png"
         },
         "Oranges":{
-            "Price" : 0.35,
+            "Price" : 0.45,
             "Description": "Organic Oranges, grown from farms of Montreal.",
             "image": "images/Fruits and veggies/Orange.png"
         },
