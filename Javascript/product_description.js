@@ -53,12 +53,11 @@ function update_input(){
 
     }
 
-    console.log(window.location.href.indexOf("?"))
     if(window.location.href.indexOf("?") == -1){
         history.replaceState("","",window.location.href+"?quantity="+quantity) //Updates quantity parameter in url
 
     }else{
-        history.replaceState("","",window.location.href+"&quantity="+quantity) //Updates quantity parameter in url
+        history.replaceState("","",window.location.href.substring(0,window.location.href.indexOf("&quantity"))+"&quantity="+quantity) //Updates quantity parameter in url
 
     }
 
