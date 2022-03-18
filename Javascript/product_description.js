@@ -1,6 +1,13 @@
 var price;
 var description;
 var image;
+// foodCounter = localStorage.getItem(`${url.get('product')}foodCounter`);
+// if(foodCounter == null)
+// foodCounter = 0;
+let url1 = new URLSearchParams(location.search);
+console.log(url1.get('product'))
+foodCounter = localStorage.getItem(`${url1.get('product')}foodCounter`);
+
 
 window.addEventListener('load', async() => {
 
@@ -10,6 +17,7 @@ window.addEventListener('load', async() => {
     let quantity = url.get('quantity');
     let aisle = url.get('aisle');
     let product = url.get('product');
+    
 
 
     //Get necessary data from json file
@@ -32,11 +40,12 @@ window.addEventListener('load', async() => {
 
 
 
-    if(quantity != null){
-        document.getElementById("quantity_input").value = quantity;
+    if(foodCounter != null){
+        document.getElementById("quantity_input").value = foodCounter;
         update_input();
     }
     
+
 
   });
 
@@ -44,8 +53,13 @@ window.addEventListener('load', async() => {
 
 function update_input(){
     let quantity = document.getElementById("quantity_input").value;
+    // let quantity = localStorage.getItem('foodCounter');
+    foodCounter = document.getElementById("quantity_input").value;
+    localStorage.setItem(`${url1.get('product')}foodCounter`,foodCounter);
 
-    if(quantity<0){ //Alert if below 0 (invalid)
+    console.log(localStorage.getItem(`${url1.get('product')}foodCounter`));
+
+    if(foodCounter<0){ //Alert if below 0 (invalid)
         document.getElementById("price_update").style.color = "red";
 
     }else{
@@ -54,21 +68,21 @@ function update_input(){
     }
 
     if(window.location.href.indexOf("?") == -1){
-        history.replaceState("","",window.location.href+"?quantity="+quantity) //Updates quantity parameter in url
+        history.replaceState("","",window.location.href+"?quantity="+foodCounter) //Updates quantity parameter in url
 
     }else{
 
         if(window.location.href.indexOf("&quantity")!=-1){
-            history.replaceState("","",window.location.href.substring(0,window.location.href.indexOf("&quantity"))+"&quantity="+quantity) //Updates quantity parameter in url
+            history.replaceState("","",window.location.href.substring(0,window.location.href.indexOf("&quantity"))+"&quantity="+foodCounter) //Updates quantity parameter in url
 
         }else{
-            history.replaceState("","",window.location.href +"&quantity="+quantity) //Updates quantity parameter in url
+            history.replaceState("","",window.location.href +"&quantity="+foodCounter) //Updates quantity parameter in url
 
         }
 
     }
 
-    document.getElementById("price_update").innerHTML = "$"+quantity*price; //Update price
+    document.getElementById("price_update").innerHTML = "$"+foodCounter*price; //Update price
 
 
 
