@@ -49,6 +49,26 @@
         $("#navbar").load("Components/navbar.html");
     });
 </script>
+<script>
+function read1(){
+     var x = document.getElementById("cart-1-quantity").value;
+ 
+     var y = document.getElementById("cart-2-quantity").value;
+ 
+     var z = document.getElementById("cart-3-quantity").value;
+     
+   var a = (x)*4.99 + (y)*4.99 + (z)*4.99;
+  var b = a * 0.1;
+  var c = a * 0.05;
+  var d = a + b + c;
+document.getElementById("total4").innerHTML = "$".concat(a); 
+document.getElementById("total7").innerHTML = "$".concat(d);
+document.getElementById("total5").innerHTML = "$".concat(b);
+document.getElementById("total6").innerHTML = "$".concat(c);
+}
+</script>
+
+    
 
 <body>
     <div id="navbar"></div>
@@ -56,9 +76,9 @@
 
         <ul class="list">
 
-            <li> Coffee <input type="number"><button class="add">Add</button> <button class="remove">remove</button> </li>
-            <li> Milk <input type="number"><button class="add">Add</button>  <button class="remove">remove</button></li>
-            <li> Tea <input type="number"><button class="add">Add</button> <button class="remove">remove</button> </li>
+            <li> Coffee <input type="number" id="cart-1-quantity" value="0" onchange = "read1()"><button class="add">Add</button> <button class="remove">remove</button> </li>
+            <li> Milk <input type="number" id="cart-2-quantity" value="0" onchange = "read1()"><button class="add">Add</button>  <button class="remove">remove</button></li>
+            <li> Tea <input type="number" id="cart-3-quantity" value="0" onchange = "read1()"><button class="add">Add</button> <button class="remove">remove</button> </li>
 
         </ul>
 
@@ -68,9 +88,13 @@
 
     <div class="container2"> <div class="box2"> <h4>Cart Summary</h4>
                              <h5>Subtotal: </h5>
+                             <h5 class="price"><span id="total4">$0.00</span></h5>
                              <h5>QST: </h5>
+                             <h5 class="price"><span id="total5">$0.00</span></h5>
                              <h5>GST: </h5>
+                             <h5 class="price"><span id="total6">$0.00</span></h5>
                              <h2>Estimated Total: </h2></div></div>
+                             <h5 class="price"><span id="total7">$0.00</span></h5>
 
     <div class="continue_shopping"> <button>Continue Shopping</button> </div>
 
