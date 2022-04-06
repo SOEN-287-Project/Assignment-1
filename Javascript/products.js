@@ -1,6 +1,8 @@
 
-productHTML();
+productHTML(); //Displays all aisles and html for collapseables
 
+
+//Edit button display
 function edit_product(aisle,product){
     edit_html = `<!-- This div is displayed when edit button under "products" items clicked  -->
     <div class="edit_div">
@@ -68,7 +70,7 @@ function edit_product(aisle,product){
 }
 
 
-//Add aisle display
+//Add aisle button display
 function add_aisle(newAisle){
     if(newAisle == ""){
         var fct = "save_aisle(true)"
@@ -157,6 +159,7 @@ function save_aisle(reload){
     .done( function( data ) {
         if(reload){
             check_display_backend();
+            $("#navbar").load("Components/navbar.html"); 
             close_add_aisle();
         }
         alert("Aisle added successfully.");
@@ -166,6 +169,7 @@ function save_aisle(reload){
     .fail( function( data ) {
         if(reload){
             check_display_backend();
+            $("#navbar").load("Components/navbar.html"); 
             close_add_aisle();
         }
         alert("Aisle add failed.");
@@ -189,6 +193,7 @@ function deleteProduct(aisle,product){
         .done( function( data ) {
     
             check_display_backend();
+            $("#navbar").load("Components/navbar.html"); 
             alert("Product removal succeeded.");
     
     
@@ -196,6 +201,7 @@ function deleteProduct(aisle,product){
         .fail( function( data ) {
     
             check_display_backend();
+            $("#navbar").load("Components/navbar.html"); 
             alert("Product removal failed.");
     
         });
@@ -323,6 +329,7 @@ async function save_edit_product(aisle,product){
 
         check_display_backend();
         close_display_edit();
+        $("#navbar").load("Components/navbar.html"); 
         alert("Product edit succeeded.");
 
 
@@ -331,6 +338,7 @@ async function save_edit_product(aisle,product){
 
         check_display_backend();
         close_display_edit();
+        $("#navbar").load("Components/navbar.html"); 
         alert("Product edit failed.");
 
     });
@@ -460,6 +468,7 @@ async function save_add_product(aisle){
 
         check_display_backend();
         close_display_edit();
+        $("#navbar").load("Components/navbar.html"); 
         alert("Product add succeeded.");
 
 
@@ -468,6 +477,7 @@ async function save_add_product(aisle){
 
         check_display_backend();
         close_display_edit();
+        $("#navbar").load("Components/navbar.html"); 
         alert("Product add failed.");
 
     });
