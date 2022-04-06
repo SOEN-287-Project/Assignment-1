@@ -17,9 +17,6 @@ function check_display_backend(){
 
 }
 
-function display_edit_demo(){
-    $( "#edit_div" ).load( "backend/edit_div_products.html" );
-}
 
 function display_edit_demo_orders(){
     $( "#edit_div" ).load( "backend/edit_div_orders.html" );
@@ -31,4 +28,9 @@ function display_edit_demo_user(){
 
 function close_display_edit(){
     document.getElementById("edit_div").innerHTML = ""
+}
+
+function close_add_aisle(){
+    document.getElementById("edit_aisle").innerHTML = ""
+
 }

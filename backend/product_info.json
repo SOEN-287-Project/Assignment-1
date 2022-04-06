@@ -1,5 +1,7 @@
 {
     "FruitsAndVegetables":{
+        "AisleName":"Fruits and Vegetables",
+        "AisleDisplay":"<i class=\"fas fa-apple-alt\"></i>Fruits and Vegetables<i class=\"fas fa-carrot\"></i>",
         "Apple":{
             "Price" : 1.99,
             "Description": "Organic Apple, grown from farms of Montreal.",
@@ -72,6 +74,8 @@
         }
     },
     "DairyProducts":{
+        "AisleName":"Dairy Products",
+        "AisleDisplay":"<i class=\"fas fa-cheese\"></i>Dairy Products",
         "Eggs":{
             "Price" : 0.50,
             "Description": "Organic Eggs, grown from farms of Montreal.",
@@ -89,6 +93,8 @@
         }
     },
     "Snacks":{
+        "AisleName":"Snacks",
+        "AisleDisplay":"<i class=\"fas fa-cookie-bite\"></i>Snacks<i class=\"fas fa-candy-cane\"></i>",
         "Doritos":{
             "Price" : 1.99,
             "Description": "American brand of flavored tortilla chips produced since 1964 by Frito-Lay, a wholly owned subsidiary of PepsiCo.",
