@@ -1,6 +1,33 @@
 
 productHTML(); //Displays all aisles and html for collapseables
 
+function deleteAisle(aisle){
+    if (confirm('Are you sure you want to delete this aisle: '+aisle+'?')) {
+
+        delete json[aisle]; //Delete aisle
+        $.ajax({
+            type: 'POST',
+            url: 'backend/product_edit.php',
+            data: {Json:json}    
+    
+        })
+        .done( function( data ) {
+
+            check_display_backend();
+            $("#navbar").load("Components/navbar.html"); 
+            alert("Aisle deleted successfully.");
+
+
+        })
+        .fail( function( data ) {
+
+            check_display_backend();
+            $("#navbar").load("Components/navbar.html"); 
+            alert("Aisle delete failed.");
+
+        });
+    }
+}
 
 //Edit button display
 function edit_product(aisle,product){
@@ -516,6 +543,12 @@ function getProductsFromAisle(aisle){
         <button id = "btn_`+AisleID+`" class="btn position_right button_display" type="button" data-parent="#Product_`+AisleID+`" data-toggle="collapse" data-target=".collapseable`+AisleID+`" aria-expanded="false" aria-controls="collapseable`+AisleID+`">
             <i class="fas fa-chevron-circle-down"></i>
         </button>
+
+        <button id = "" class="btn position_right trash_display" type="button" onclick="deleteAisle('`+AisleID+`')">
+        <i class="fa fa-trash" aria-hidden="true"></i>
+        
+        </button>
+
         <div class="center_vertical">
         `+AisleDisplay+`
         </div>

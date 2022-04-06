@@ -72,6 +72,28 @@ body {
 }
 
 /* Backend */
+
+.trash_display{
+  background: transparent;
+  visibility: hidden;
+  color:rgb(39, 62, 192);
+  padding-right: 2px;
+
+}
+
+.trash_display:hover{
+  color:red;
+}
+
+
+
+.table_display:hover .trash_display{
+  visibility:visible;
+
+  
+  
+}
+
 .button_display {
   background: transparent;
 }
