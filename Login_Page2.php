@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 
 <html lang="en">
@@ -41,6 +40,7 @@
 
   <!--Grocery Store name -->
   <title>Trader Jack's</title>
+  <title>Login Page</title>
 
 </head>
 <script>
@@ -51,48 +51,36 @@
 
 
 <body>
-    <div id="navbar">
 
-    </div>
-    
+  <div id="navbar">
 
+  </div>
 
+  <div class="page-wrapper" style="margin-left: 3vw; color:black">
 
-    <div class="page-wrapper" style="margin-left: 3vw; color: black">
-        <h1 style="margin: 2vh 0vh;">Sign Up Page</h1>
-        <form action="">
-            <label for="gender">Select your gender:</label>
-            <select name="gender" id="gender">
-        <option value="Mr">Mr</option>
-        <option value="Mrs">Mrs</option>
-      </select>
-            <br><br>
-            <label>First Name: </label>
-            <input type="text" name="firstname" id="firstname" required />
-            <label id="validate4" style="color: red;visibility:hidden">Invalid</label>
-            <br> <br>
-            <label>Last Name: </label>
-            <input type="text" name="lastname" id=lastname required/>
-            <label id="validate5" style="color: red;visibility:hidden">Invalid</label>
-            <br> <br>
-            <label>Postal Code: </label>
-            <input type="text" name="postalcode" id="postalCode" required/>
-            <label id="validate3" style="color: red;visibility:hidden">Invalid</label>
-            <br><br>
-            <label>Email Address: </label>
-            <input type="text" name="email" id="email"required />
-            <label id="validate" style="color: red;visibility:hidden">Invalid</label>
-            <br><br>
-            <label>Password: </label>
-            <input type="password" name="password" id="password" required/>
-            <br><br>
-        </form>
-        <button onclick="validateEmail();validatePostalCode();validateFirstName();validateLastName();" type="button">Create Account</button>
+    <h1 style="margin: 2vh 0;">Login Page</h1>
+    <p>
+    <form action="includes/login.inc.php">
+      <label>Email: </label>
+      <input type="text" name="email" id="email" required />
+      <label id="validate" style="color: red;visibility:hidden">Invalid</label>
+      <br><br>
+      <label>Password: </label>
+      <input type="password" name="password" required />
+      <br><br>
+      <button onclick="validateEmail()" type="button">Submit</button>
+      <a href="Recreate_Password.html"><button>Forgot Password</button></a>
+    </form>
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous "></script>
-    <script src=login_validation.js></script>
-  </body>
+    </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js "
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi "
+    crossorigin="anonymous "></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js "
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG "
+    crossorigin="anonymous "></script>
+  <script src=login_validation.js></script>
+</body>
 
 </html>

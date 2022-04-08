@@ -52,8 +52,8 @@ $(function(){
     <div class="hero-text">
       <h1 style="font-size:50px">Trader Jacks</h1>
       <p>Grocery Store</p>
-      <button><a href="Sign_Up_Page2.html">Sign up!</a></button>
-      <button><a href="Login_Page2.html">Log in</a></button>
+      <button><a href="Sign_Up_Page2.php">Sign up!</a></button>
+      <button><a href="Login_Page2.php">Log in</a></button>
     </div>
   </div>
 </body>
