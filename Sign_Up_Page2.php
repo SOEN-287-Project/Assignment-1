@@ -56,7 +56,7 @@
      
       <!-- form -->
 
-      <form action="includes/signup.inc.php">
+      <form action="./includes/signup.inc.php" method="post">
         <label for="gender">Select your gender:</label>
         <select name="gender" id="gender">
           <option value="Mr">Mr</option>

@@ -60,7 +60,7 @@
 
     <h1 style="margin: 2vh 0;">Login Page</h1>
     <p>
-    <form action="includes/login.inc.php">
+    <form action="includes/login.inc.php" method="post">
       <label>Email: </label>
       <input type="text" name="email" id="email" required />
       <label id="validate" style="color: red;visibility:hidden">Invalid</label>
