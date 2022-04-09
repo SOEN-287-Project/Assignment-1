@@ -1,3 +1,8 @@
+<?php
+  session_start();
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -68,7 +73,7 @@
       <label>Password: </label>
       <input type="password" name="password" required />
       <br><br>
-      <button onclick="validateEmail()" type="button">Submit</button>
+      <button onclick="validateEmail()" type="submit" name="submit">Submit</button>
       <a href="Recreate_Password.html"><button>Forgot Password</button></a>
     </form>
 

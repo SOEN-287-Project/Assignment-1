@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,5 +60,26 @@ $(function(){
       <button><a href="Login_Page2.php">Log in</a></button>
     </div>
   </div>
+
+  <ul class= "login-check">
+    <?php
+      if(isset($_SESSION["useremail"])){
+    ?>
+
+    <li><a href=#><?php echo $_SESSION["useremail"]?> </a></li>
+    <li><a href="./includes/logout.inc.php">LOGOUT </a></li>
+
+    <?php
+      }
+      else
+      {
+    ?>
+        <li><a href=#>SIGN UP </a></li>
+    <li><a href="#">LOGIN</a></li>
+
+    <?php
+    }
+    ?>
+  </ul>
 </body>
 </html>
